@@ -2,6 +2,8 @@
 
 Generiert [Anki](https://apps.ankiweb.net/) Deck Karten für die [FernUniversität in Hagen](https://fernuni-hagen.de/) Kurse.
 
+Die zuletzt automatisch generierten Decks sind unter [Releases](releases/tag/latest) zu finden.
+
 ## Generierung
 ### Python
 Die csv Dateien werden mit einem Ptyhon3 Skript ins Anki Format übertragen.

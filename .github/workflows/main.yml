@@ -1,0 +1,25 @@
+iname: Generate Anki Decks
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v1.2.0
+    - name: install genanki
+      run: pip3 install genanki
+    - name: generate Decks
+      run: python3 generate.py
+    - name: Upload apkg files
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        title: latest
+        automatic_release_tag: latest 
+        prerelease: false
+        files: "*.apkg"
