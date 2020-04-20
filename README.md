@@ -2,7 +2,7 @@
 
 Generiert [Anki](https://apps.ankiweb.net/) Deck Karten für die [FernUniversität in Hagen](https://fernuni-hagen.de/) Kurse.
 
-Die zuletzt automatisch generierten Decks sind unter [Releases](releases/tag/latest) zu finden.
+Die zuletzt automatisch generierten Decks sind unter [Releases](https://github.com/nh-hagen/FernUni-Anki/releases/tag/latest) zu finden.
 
 ## Generierung
 ### Python
