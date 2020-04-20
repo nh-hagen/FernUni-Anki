@@ -1,4 +1,4 @@
-iname: Generate Anki Decks
+name: Generate Anki Decks
 
 on:
   push:
