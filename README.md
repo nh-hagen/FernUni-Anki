@@ -1,0 +1,30 @@
+# Anki Deck Generator
+
+Generiert [Anki](https://apps.ankiweb.net/) Deck Karten für die [FernUniversität in Hagen](https://fernuni-hagen.de/) Kurse.
+
+## Generierung
+### Python
+Die csv Dateien werden mit einem Ptyhon3 Skript ins Anki Format übertragen.
+```
+pip3 install genanki
+python3 generate.py
+```
+Danach lassen sich die apkg Dateien in Anki importieren.
+
+### Docker
+Ist auf dem (Linux) System schon [Docker](https://docker.com) installiert, genügt folgender Aufruf:
+```
+docker run --rm -ti -v $PWD:/anki python:3-alpine sh -c "pip install genanki && cd /anki && python generate.py && chown $UID *.apkg"
+```
+
+## Mitmachen
+### csv Dateien
+csv Dateien sollten im Schema "\<Kursnummer\> \<Kursbezeichnung\>/\<Kurseinheit\>/basic.csv" benannt werden
+
+Die Dateien sind mit dem Seperator ";" (Semikolon) getrennt
+```
+Vorderseite;Rückseite
+```
+
+### Bilder
+Bilder sollten unter "\<Kursnummer\> \<Kursbezeichnung\>/images" abgelegt werden und können in Karten mit ```<img src="foo.jpg">``` verwendet werden. (Ohne Verzeichnis "images")
