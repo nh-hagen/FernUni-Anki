@@ -109,7 +109,7 @@ def main():
 
         try:
             anki.write_to_file(kursName + ".apkg")
-            printSuccess("Deck successfully created.")
+            printSuccess("Deck {} successfully created.".format(kursName))
         except IOError:
             printError("A problem occured while creating "
                         "file: {}".format(kursName + ".apkg"))
