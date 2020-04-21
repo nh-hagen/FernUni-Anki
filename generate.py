@@ -104,7 +104,8 @@ def main():
         # pack decks to one project
         anki = genanki.Package(decks)
         # add images to project
-        anki.media_files = [f.path for f in os.scandir(kursName + "/images") if f.is_file()]
+        if os.path.isdir(kursName + "/images"):
+            anki.media_files = [f.path for f in os.scandir(kursName + "/images") if f.is_file()]
 
         try:
             anki.write_to_file(kursName + ".apkg")
