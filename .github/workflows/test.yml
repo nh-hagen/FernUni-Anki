@@ -1,0 +1,17 @@
+name: Test Generate Anki Decks
+
+on:
+  push:
+    branches-ignore: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v1.2.0
+    - name: install genanki
+      run: pip3 install genanki
+    - name: Test generate Decks
+      run: python3 generate.py
