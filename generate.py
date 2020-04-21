@@ -10,7 +10,7 @@ import sys
 
 def printError(string):
     print("[!] {}".format(string), file=sys.stderr)
-    exit()
+    exit(1)
 
 
 def printSuccess(string):
