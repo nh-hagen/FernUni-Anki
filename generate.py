@@ -70,8 +70,8 @@ def generateDeck(kursName, kursEinheit):
                 if len(row) != 2:
                     printError("Skipping line: <{}> due to separator problem"
                                .format(";".join(row)) + "\nExpected format: <QUESTION>;<ANSWER>")
-                question = row[0]
-                answer = row[1]
+                question = row[0].replace("\\n","<br>")
+                answer = row[1].replace("\\n"," <br>")
 
                 note = genanki.Note(
                         model=getModel(),
