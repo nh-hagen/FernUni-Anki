@@ -1,0 +1,5 @@
+Welche Operationen unterstützt ein Stack neben (empty und isempty); push, pop, top
+In welcher Reihenfolge arbeitet das levelorder Verfahren?;von links nach rechts, von oben nach unten
+In welcher Reihenfolge arbeitet das preorder Verfahren?;Wurzel Links Rechts (Grafischelösung links)
+In welcher Reihenfolge arbeitet das inorder Verfahren?;Links Wurzel Rechts (Grafischelösung unten)
+In welcher Reihenfolge arbeitet das postorder Verfahren?;Links Rechts Wurzel (Grafischelösung rechts)
