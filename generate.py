@@ -63,7 +63,7 @@ def generateDeck(kursName, kursEinheit):
 
     filePath = kursName + "/" + kursEinheit + "/basic.csv"
     try:
-        with open(filePath) as f:
+        with open(filePath, encoding='utf-8') as f:
             csvfile = csv.reader(f, delimiter=';', quotechar='"')
             for row in csvfile:
             #for line in f:
