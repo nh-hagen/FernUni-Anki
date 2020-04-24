@@ -3,3 +3,7 @@ In welcher Reihenfolge arbeitet das levelorder Verfahren?;von links nach rechts,
 In welcher Reihenfolge arbeitet das preorder Verfahren?;Wurzel Links Rechts (Grafischelösung links)
 In welcher Reihenfolge arbeitet das inorder Verfahren?;Links Wurzel Rechts (Grafischelösung unten)
 In welcher Reihenfolge arbeitet das postorder Verfahren?;Links Rechts Wurzel (Grafischelösung rechts)
+<img src="Binary_tree_blatt.png">;Blatt
+<img src="Binary_tree_kante.png">;Kante
+<img src="Binary_tree_knoten.png">;Knoten
+<img src="Binary_tree_wurzel.png">;Wurzel/Root
