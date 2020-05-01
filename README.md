@@ -19,6 +19,12 @@ Ist auf dem (Linux) System schon [Docker](https://docker.com) installiert, genü
 docker run --rm -ti -v $PWD:/anki python:3-alpine sh -c "pip install genanki && cd /anki && python generate.py && chown $UID *.apkg"
 ```
 
+Dafür gibt es auch
+
+```
+./generate.sh
+```
+
 ## Mitmachen
 ### csv Dateien
 csv Dateien sollten im Schema "\<Kursnummer\> \<Kursbezeichnung\>/\<Kurseinheit\>/basic.csv" benannt werden
