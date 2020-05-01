@@ -7,3 +7,8 @@ In welcher Reihenfolge arbeitet das postorder Verfahren?;Links Rechts Wurzel (Gr
 <img src="Binary_tree_kante.png">;Kante
 <img src="Binary_tree_knoten.png">;Knoten
 <img src="Binary_tree_wurzel.png">;Wurzel/Root
+​Wie viele Nachkommen kann ein Knoten im Binärbaum max. haben?;2
+Wie wird der binäre Suchbaum auch abgekürzt?;BST Binary Search Tree
+Was ist ein AVL-Baum?;Ein binäre Suchbaum mit der zusätzlichen Eigenschaft, dass sich an jedem Knoten die Höhe der beiden Teilbäume um höchstens eins unterscheiden.
+Ist der AVL-Baum balanciert?;Ja
+Worin ist der Unterschied vom AVL-Baum zum Binärbaum?;Ein Binärbaum muss nicht balanciert sein.
