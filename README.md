@@ -16,7 +16,7 @@ Danach lassen sich die apkg Dateien in Anki importieren.
 ### Docker
 Ist auf dem (Linux) System schon [Docker](https://docker.com) installiert, genügt folgender Aufruf:
 ```
-docker run --rm -ti -v $PWD:/anki python:3-alpine sh -c "pip install genanki && cd /anki && python generate.py && chown $UID *.apkg"
+docker run --rm -ti -v $PWD:/anki -u $UID python:3-alpine sh -c "pip install --prefix /tmp genanki && cd /anki && PYTHONUSERBASE=/tmp python generate.py"
 ```
 
 ## Mitmachen
