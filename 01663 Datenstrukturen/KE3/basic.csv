@@ -1,3 +1,5 @@
 Was ist ein AVL-Baum?;Ein binäre Suchbaum mit der zusätzlichen Eigenschaft, dass sich an jedem Knoten die Höhe der beiden Teilbäume um höchstens eins unterscheiden.
 Ist der AVL-Baum balanciert?;Ja
 Worin ist der Unterschied vom AVL-Baum zum Binärbaum?;Ein Binärbaum muss nicht balanciert sein.
+Wie funktioniert die Hashfunktion nach der Divisionsmethode?;Man bestimmt den höchst möglichen Wert m und rechnet [$]h(x) = k \mod m[/$]\nz.B. [$]127 \mod 100 = 27[/$]
+Wie funktioniert die Hashfunktion nach der Mittel-Quadrat-Methode?;Man quadriert den Wert und immt einen Werte aus der Mitte.\nz.B. [$]127^2 = 16\textbf{12}9 = 12[/$]
