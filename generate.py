@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import genanki
+from graphviz import render
 import hashlib
 import csv
 import os
@@ -20,6 +21,12 @@ def printSuccess(string):
 def getID(string):
     return int(hashlib.sha256(string.encode("utf-8")).hexdigest()[:12],
                base=16)
+
+def generateGraphviz(kursName):
+    for file in  [f.path for f in os.scandir(kursName) if f.is_file()]:
+        if not file.endswith(".dot"):
+            continue
+        render("dot", "png", file)
 
 
 def getModel():
@@ -97,6 +104,7 @@ def main():
             if kursEinheit.startswith("."):
                 continue
             if kursEinheit.startswith("images"):
+                generateGraphviz(kursName + "/images")
                 continue
             # generate deck
             decks.append(generateDeck(kursName, kursEinheit))

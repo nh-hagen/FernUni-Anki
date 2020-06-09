@@ -8,7 +8,7 @@ Die zuletzt automatisch generierten Decks sind unter [Releases](https://github.c
 ### Python
 Die csv Dateien werden mit einem Ptyhon3 Skript ins Anki Format übertragen.
 ```
-pip3 install genanki
+pip3 install genanki graphviz
 python3 generate.py
 ```
 Danach lassen sich die apkg Dateien in Anki importieren.
@@ -16,7 +16,7 @@ Danach lassen sich die apkg Dateien in Anki importieren.
 ### Docker
 Ist auf dem (Linux) System schon [Docker](https://docker.com) installiert, genügt folgender Aufruf:
 ```
-docker run --rm -ti -v "$PWD:/anki" -u $UID python:3-alpine sh -c "pip install --prefix /tmp genanki && cd /anki && PYTHONUSERBASE=/tmp python generate.py"
+docker run --rm -ti -v "$PWD:/anki" -u $UID python:3-alpine sh -c "pip install --prefix /tmp genanki graphviz && cd /anki && PYTHONUSERBASE=/tmp python generate.py"
 ```
 
 Dafür gibt es auch

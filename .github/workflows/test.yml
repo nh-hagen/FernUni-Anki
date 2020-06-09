@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setup Python
       uses: actions/setup-python@v1.2.0
-    - name: install genanki
-      run: pip3 install genanki
+    - name: pip install
+      run: pip3 install genanki graphviz
     - name: Test generate Decks
       run: python3 generate.py
