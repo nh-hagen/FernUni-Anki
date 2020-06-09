@@ -3,3 +3,6 @@ Ist der AVL-Baum balanciert?;Ja
 Worin ist der Unterschied vom AVL-Baum zum Binärbaum?;Ein Binärbaum muss nicht balanciert sein.
 Wie funktioniert die Hashfunktion nach der Divisionsmethode?;Man bestimmt den höchst möglichen Wert m und rechnet [$]h(x) = k \mod m[/$]\nz.B. [$]127 \mod 100 = 27[/$]
 Wie funktioniert die Hashfunktion nach der Mittel-Quadrat-Methode?;Man quadriert den Wert und immt einen Werte aus der Mitte.\nz.B. [$]127^2 = 16\textbf{12}9 = 12[/$]
+Ist das ein AVL-Baum?\n<img src="avl_nein.dot.png">;Nein, er ist zwar balanciert, aber kein Suchbaum.
+Ist das ein AVL-Baum?\n<img src="avl_nein2.dot.png">;Nein, er ist zwar ein Suchbaum, aber nicht balanciert.
+Ist das ein AVL-Baum?\n<img src="avl_ja.dot.png">;Ja.

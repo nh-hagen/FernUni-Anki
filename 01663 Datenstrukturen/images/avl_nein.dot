@@ -1,0 +1,7 @@
+digraph G {
+    edge [arrowhead=none];
+    6 -> 4
+    6 -> 10
+    10 -> 14
+    10 -> 8
+}
