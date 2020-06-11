@@ -1,0 +1,16 @@
+digraph G {
+    edge [arrowhead=none]
+    none [style=invisible]
+    6 -> 4
+    6 -> 10
+    4 -> 1
+    4 -> 5
+    10 -> 14
+    10 -> none [style=invisible]
+    14 -> 18
+    14 -> none [style=invisible]
+
+    10 [fillcolor="#E0FFFF" style=filled]
+    14 [fillcolor="#E6E6FA" style=filled]
+    18 [fillcolor="#FFDEAD" style=filled]
+}

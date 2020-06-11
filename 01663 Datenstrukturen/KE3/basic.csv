@@ -6,3 +6,5 @@ Wie funktioniert die Hashfunktion nach der Mittel-Quadrat-Methode?;Man quadriert
 Ist das ein AVL-Baum?\n<img src="avl_nein.dot.png">;Nein, er ist zwar balanciert, aber kein Suchbaum.
 Ist das ein AVL-Baum?\n<img src="avl_nein2.dot.png">;Nein, er ist zwar ein Suchbaum, aber nicht balanciert.
 Ist das ein AVL-Baum?\n<img src="avl_ja.dot.png">;Ja.
+Wie sieht der AVL-Baum aus?\n<img src="avl_rotation_links1_1.dot.png">;<img src="avl_rotation_links1_2.dot.png">
+In welche Richtung muss der Baum rotiert werden, um ein gültiger AVL-Baum zu werden?\n<img src="avl_rotation_links1_1.dot.png">;links
