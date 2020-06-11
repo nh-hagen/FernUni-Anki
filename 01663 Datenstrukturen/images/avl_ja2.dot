@@ -1,0 +1,12 @@
+digraph G {
+    edge [arrowhead=none]
+    none1, none2 [style=invisible]
+    6 -> 4
+    6 -> 10
+    4 -> 1
+    4 -> none1 [style=invisible]
+    10 -> 9
+    10 -> 14
+    14 -> 18
+    14 -> none2 [style=invisible]
+}
