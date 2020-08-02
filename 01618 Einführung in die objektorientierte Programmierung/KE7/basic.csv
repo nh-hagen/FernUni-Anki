@@ -1,0 +1,30 @@
+Wahr oder Falsch?\nEin Klassentyp kann in Java niemals Supertyp eines Interface-Typs sein.;Falsch: Der Klassentyp Object ist auch Supertyp aller Interface-Typen.
+Wahr oder Falsch?\nEine Klasse kann in Java nicht abstract und final zugleich sein;Richtig: Von einer als final deklarierten Klasse können keine Subklassen gebildet werden. Eine als abstract deklarierte Klasse ist explizit dazu gedacht, als Superklasse konkreter Subklassen zu dienen.
+Wahr oder Falsch?\nVon einer als static deklarierten Klasse können in Java keine Instanzen existieren.;Falsch: Siehe z.B. die Klasse Entry in Abschnitt 2.2.2.1 im Kurstext
+Wahr oder Falsch?\nAuch abstrakte Klassen haben in Java immer mindestens einen Konstruktor.;Richtig: Jede Klasse in Java hat - implizit oder explizit - immer mindestens einen Konstruktor.
+Wahr oder Falsch?\nVon einer Klasse, die nur einen als private deklarierten Konstruktor besitzt, können in Java keine Instanzen existieren.;Falsch: Z.B. könnte eine Klassenmethode derselben Klasse den privaten Konstruktor nutzen, um eine Instanz zu erzeugen und an den Aufrufer zurückzugeben.
+Wahr oder Falsch?\nDer Typ List<Object> ist in Java Supertyp aller Listen-Typen.;Falsch: Der gemeinsame Supertyp aller Listen ist List<?>
+Wahr oder Falsch?\nAls final deklarierte Methoden können in Java nicht überschrieben werden.;Richtig
+Wahr oder Falsch?\nDie Deklaration einer Instanzvariablen als synchronized verhindert in Java, dass auf diese parallel von mehreren Threads zugegriffen werden kann.;Falsch: Eine Instanzvariable kann gar nicht als synchronized deklariert werden.
+Wahr oder Falsch?\nEine Try-Anweisung mit Finally-Block muss in Java nicht zwingend einen Catch-Block haben.;Richtig: Eine Try-Anweisung muss mindestens einen Catch- oder einen Finally-Block besitzen.
+Wahr oder Falsch?\nDie Auswertung des Ausdrucks new int[0][5] erzeugt in Java genau ein Objekt.;Richtig: Dabei handelt es sich um einen Array der Länge 0
+Wahr oder Falsch?\nEin Klassentyp kann in Java niemals Supertyp eines Interface-Typs sein.;Falsch. Der Klassentyp Object ist auch Supertyp aller Interface-Typen.
+Wahr oder Falsch?\nEine Klasse kann in Java nicht abstract und final zugleich sein.;Richtig. Von einer als final deklarierten Klasse können keine Subklassen gebildet werden. Eine als abstract deklarierte Klasse ist explizit dazu gedacht, als Superklasse konkreter Subklassen zu dienen.
+Wahr oder Falsch?\nVon einer als static deklarierten Klasse können in Java keine Instanzen existieren.;Falsch. Siehe z.B. die Klasse Entry in Abschnitt 2.2.2.1 im Kurstext
+Wahr oder Falsch?\nAuch abstrakte Klassen haben in Java immer mindestens einen Konstruktor.;Richtig. Jede Klasse in Java hat implizit oder explizit immer mindestens einen Konstruktor.
+Wahr oder Falsch?\nVon einer Klasse, die nur einen als private deklarierten Konstruktor besitzt, können in Java keine Instanzen existieren.;Falsch. Z.B. könnte eine Klassenmethode derselben Klasse den privaten Konstruktor nutzen, um eine Instanz zu erzeugen und an den Aufrufer zurückzugeben.
+Wahr oder Falsch?\nDer Typ List<Object> ist in Java Supertyp aller Listen-Typen.;Falsch. Der gemeinsame Supertyp aller Listen ist List<?>.
+Wahr oder Falsch?\nAls final deklarierte Methoden können in Java nicht überschrieben werden.;Richtig.
+Wahr oder Falsch?\nDie Deklaration einer Instanzvariablen als synchronized verhindert in Java, dass auf diese parallel von mehreren Threads zugegriffen werden kann.;Falsch. Eine Instanzvariable kann gar nicht als synchronized deklariert werden.
+Wahr oder Falsch?\nEine Try-Anweisung mit Finally-Block muss in Java nicht zwingend einen Catch-Block haben.;Richtig. Eine Try-Anweisung muss mindestens einen Catch- oder einen Finally-Block besitzen.
+Wahr oder Falsch?\nDie Auswertung des Ausdrucks new int[0][5] erzeugt in Java genau ein Objekt.;Richtig.
+"Wahr oder Falsch?\nDie Schleife while( false ) { do(); } wird nie durchlaufen.";Richtig, do() ist kein korrekter Methodenname (do = Schlüsselwort), d.h. das Programmstück würde gar nicht erst kompilieren. Außerdem wird eine while Schleife nur bei wahrer Bedingung durchlaufen.
+Wahr oder Falsch?\nnew double[2] definiert ein Array aus zwei int-Werten.;Falsch, denn ein double Array definiert kein int Array.
+Wahr oder Falsch?\nEin Array mit zwanzig Einträgen hat 20 gültige Indizes.;Richtig, von 0 bis 19 (also 20).
+"Wahr oder Falsch?\nNach Ausführen von int a = -1; a = -a; gilt: a < 0.";Falsch => positive Zahl.
+"Wahr oder Falsch?\nInteger int = 0; ist eine korrekte Variablendeklaration.";Falsch, da Schlüsselwörter nicht als Variablenname verwendet werden dürfen.
+"Wahr oder Falsch?\nDas Programm class X {String o = new Object();} kompiliert fehlerfrei.";Falsch, da Objekt Supertyp von String.
+Wahr oder Falsch?\nAngesetzt auf dieselbe Eingabe liefert ein Java-Programm stets dieselbe Ausgabe.;Falsch. Die Aussage gilt z.B. i.A. nicht für ein Programm, das als Eingabedaten Integerwerte erwartet, jeden Eingabewert mit einer, durch einen Zufallszahlengenerator erzeugten Zahl multipliziert und das Ergebnis ausgibt. Die Aussage kann auch durch Programme mit mehreren Threads widerlegt werden.
+Wahr oder Falsch?\nWird ein try-Block von mehreren catch-Klauseln gefolgt, so ist die Reihenfolge dieser catch-Klauseln beliebig.;Falsch. Gibt es zu einer try-Anweisung zwei catch-Klauseln zu Ausnahmetypen S und T, die in der Subtypbeziehung S ≺ T stehen, so muss die catch-Klausel für S vor der catch-Klausel für T stehen. Ansonsten wird vom Compiler eine Fehlermeldung generiert.
+Wahr oder Falsch?\nDer Modifikator private kann für Klassen nicht verwendet werden.;Falsch. Innere Klassen können als private deklariert werden.
+Wahr oder Falsch?\nSchnittstellen können immer durch abstrakte Klassen ersetzt werden.;Falsch. Wenn eine Klasse eine Schnittstelle implementiert und gleichzeitig von einer anderen Klasse erbt, kann die Schnittstelle nicht durch eine abstrakte Klasse ersetzt werden, da es in Java keine Mehrfachvererbung gibt. Analoges gilt, wenn eine Klasse mehrere Interfaces implementiert.
