@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup Python
-      uses: actions/setup-python@v1.2.0
+      uses: actions/setup-python@v2
     - name: install graphviz
       run: sudo apt install graphviz
     - name: pip install
